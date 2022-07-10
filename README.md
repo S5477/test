@@ -1,8 +1,8 @@
-#composer install
-#./vendor/bin/sail up -d
-#скопировать .env.example в .env
-#./vendor/bin/sail artisan key:generate
-#./vendor/bin/sail artisan migrate --seed
-#sail artisan scribe:generate
+#composer install<br/>
+#./vendor/bin/sail up -d<br/>
+#скопировать .env.example в .env<br/>
+#./vendor/bin/sail artisan key:generate<br/>
+#./vendor/bin/sail artisan migrate --seed<br/>
+#sail artisan scribe:generate<br/>
 
-#doc localhost/docs
+#doc localhost/docs<br/>
