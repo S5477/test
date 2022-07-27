@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Http\Resources\GenreResource;
+use App\Models\Genre;
 use App\Repositories\GenreRepository;
 
 class GenreService
@@ -22,5 +23,13 @@ class GenreService
         $list = $this->genreRepository->list();
 
         return GenreResource::collection($list);
+    }
+
+    /**
+     * @param Genre $genre
+     */
+    public function delete(Genre $genre)
+    {
+        $genre->delete();
     }
 }

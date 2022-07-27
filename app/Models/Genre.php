@@ -18,4 +18,12 @@ class Genre extends Model
         'name',
         'code',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function games()
+    {
+        return $this->belongsToMany(Game::class);
+    }
 }

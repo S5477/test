@@ -36,6 +36,10 @@ class GenreSeeder extends Seeder
                 "name" => "фентези",
                 "code" => "fantasy"
             ],
+            [
+                "name" => "аркады",
+                "code" => "arcade"
+            ],
         ];
 
         DB::table('genres')->insert($genres);
