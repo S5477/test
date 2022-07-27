@@ -34,3 +34,4 @@ Route::group(['prefix' => 'games'], function (){
 });
 
 Route::get('genres', [GenreAPIController::class, "index"]);
+Route::delete('genres/{genre}', [GenreAPIController::class, "delete"]);

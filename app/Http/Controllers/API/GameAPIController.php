@@ -34,7 +34,7 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param Game $game
      * @return \Illuminate\Http\JsonResponse
      */
     public function show(Game $game) {
@@ -44,7 +44,7 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param GameStoreAPIRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function store(GameStoreAPIRequest $request) {
@@ -54,7 +54,8 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param GameUpdateAPIRequest $request
+     * @param Game $game
      * @return \Illuminate\Http\JsonResponse
      */
     public function update(GameUpdateAPIRequest $request, Game $game) {
@@ -64,7 +65,7 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param Game $game
      * @return \Illuminate\Http\JsonResponse
      */
     public function delete(Game $game) {
@@ -74,7 +75,8 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param GameDeleteGenreAPIRequest $request
+     * @param Game $game
      * @return \Illuminate\Http\JsonResponse
      */
     public function genreAdd(GameDeleteGenreAPIRequest $request, Game $game) {
@@ -84,7 +86,8 @@ class GameAPIController extends Controller
     }
 
     /**
-     * @param GameIndexAPIRequest $request
+     * @param GameDeleteGenreAPIRequest $request
+     * @param Game $game
      * @return \Illuminate\Http\JsonResponse
      */
     public function genreRemove(GameDeleteGenreAPIRequest $request, Game $game) {

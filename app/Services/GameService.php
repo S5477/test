@@ -28,7 +28,7 @@ class GameService
     }
 
     /**
-     * @param $game
+     * @param Game $game
      * @return GameResource
      */
     public function show(Game $game) {
